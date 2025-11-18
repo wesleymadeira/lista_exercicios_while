@@ -7,10 +7,20 @@
 
     //ENTRADA
 
+    let paisA = 80000;
+    let paisB = 200000;
+    let anos = 0;
 
     //PROCESSAMENTO
 
+    while (paisA < paisB) {
+        paisA = paisA * 1.03;
+        paisB = paisB * 1.015;
+        anos = anos + 1;
+    }
 
     //SAÍDA
+
+    alert(`Irá demorar ${anos} anos`);
 
 </script>
