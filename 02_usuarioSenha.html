@@ -7,9 +7,14 @@
 
     //ENTRADA
 
+    let nome = prompt(`Informe o seu nome de usuário`);
+    let senha = prompt(`Informe a sua senha`);
 
     //PROCESSAMENTO
 
+    while (senha === nome) {
+        senha = prompt(`A senha não pode ser igual ao seu nome de  usuário. Informe outra senha!`);
+    }
 
     //SAÍDA
 
