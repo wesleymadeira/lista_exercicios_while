@@ -12,9 +12,33 @@
 
     //ENTRADA
 
+    let nome = prompt(`Informe seu nome`);
+    let idade = Number(prompt(`Informe sua idade`));
+    let salario = Number(prompt(`Informe seu salário`));
+    let sexo = prompt(`Informe seu sexo`).toLowerCase().trim();
+    let estadoCivil = prompt(`Informe seu estado civil`).toLowerCase();
 
     //PROCESSAMENTO
 
+    while (nome.length < 3) {
+        nome = prompt(`Seu nome precisa ter 3 ou mais caracteres.`);
+    }
+
+    while (idade < 0 || idade > 150) {
+        idade = Number(prompt(`Sua idade precisa ser entre 0 e 150`));
+    } 
+
+    while (salario < 0) {
+        salario = Number(prompt(`Seu salário precisa ser maior que 0`));
+    }
+    
+    while (sexo != "f" && sexo != "m") {
+        sexo = prompt(`Seu sexo precisa ser masculino (m) ou feminino (f)`).toLowerCase().trim();
+    }
+
+    while (estadoCivil != "s" && estadoCivil != "c" && estadoCivil != "v" && estadoCivil != "d") {
+        estadoCivil = prompt(`Seu estado civil precisa ser solteiro (s) ou casado (c) ou viúvo (v) ou divorciado (d)`).toLowerCase();
+    }
 
     //SAÍDA
 
