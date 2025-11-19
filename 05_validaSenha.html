@@ -7,9 +7,15 @@
 
     //ENTRADA
 
+    let senha = Number(prompt(`Crie uma senha formada por quatro números inteiros`));
+    let resposta = Number(prompt(`Confirme sua senha`));
 
     //PROCESSAMENTO
 
+    while (resposta != senha) {
+        Number(prompt(`Senha incorreta. Tente novamente!`));
+    }
+    alert(`Senha correta!`);
 
     //SAÍDA
 
